@@ -1,0 +1,77 @@
+//  @import "/Eindopdracht_advanced_CSS/Level_1_testimonial/constants"
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  $background-clr: #c3cfe2;
+  $footer-clr: #686de0;
+  $content-clr: #fff;
+  $footer-site-clr: #e2cae8;
+}
+
+body {
+  background: $background-clr;
+}
+
+.container {
+  position: relative;
+  width: 390px;
+  box-shadow: -1px 8px 20px -5px #000000;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.content {
+  height: 300px;
+  background: $content-clr;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  &__text {
+    position: absolute;
+    height: 100px;
+    top: 50px;
+    left: 20px;
+    line-height: 2em;
+    padding: 0.5em;
+  }
+}
+
+.footer {
+  position: relative;
+  height: 200px;
+  background: $footer-clr;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  &__text span {
+    position: absolute;
+    left: 130px;
+    color: $content-clr;
+    text-transform: uppercase;
+    font-weight: 550;
+    letter-spacing: 1px;
+
+    &__website span {
+      position: absolute;
+      top: 150px;
+      left: 110px;
+      color: $footer-site-clr;
+      font-weight: 550;
+    }
+  }
+}
+
+.picture {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 250px;
+  left: 140px;
+}
+.picture img {
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid $content-clr;
+}
